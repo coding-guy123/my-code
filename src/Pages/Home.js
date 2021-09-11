@@ -1,18 +1,24 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import DatePickers from '../Components/DateTimePicker';
+import ImgMediaCard from '../Components/Homepage resurces/Homepage/PrepaidClickableCard';
+import MediaCard from '../Components/Homepage resurces/Homepage/PostpaidClickableCard';
+import ContainedButtons from '../Components/Homepage resurces/Homepage/ViewContainedButtons';
+import AirtelBlack from '../Components/Homepage resurces/Homepage/AirtelBlack';
+import OutlinedCard from '../Components/Homepage resurces/Homepage/SimpleCard';
+import AirtelThanks from '../Components/Homepage resurces/Homepage/AirtelThanks';
+import ButtonLink from '../Components/Homepage resurces/Homepage/Backtotop';
+import SwipeableTextMobileStepper from '../Components/Homepage resurces/Homepage/CardCarousle';
 
 export default function Home() {
   return (
     <React.Fragment>
-        <Container fixed>
-            <p>
-                Welcome to your web application. Make something beautiful!
-            </p>
-            <p>
-                To get started, edit <code>src/App.js</code>, save, and reload this page.
-            </p>
-            <DatePickers/>
+        <Container Fixed>
+            <SwipeableTextMobileStepper/>
+            <ImgMediaCard/>
+            <MediaCard/>
+            <OutlinedCard/>
+            <AirtelThanks/>
+            <ButtonLink/>
         </Container>
     </React.Fragment>
   );
