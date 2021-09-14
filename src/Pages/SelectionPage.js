@@ -12,12 +12,13 @@ export default function Selection() {
     <React.Fragment>
         <Container fixed>
             <OutlinedCard/>
+            <br/>
             <ImgMediaCard/>
-            <ContainedButtons/>
+            <br/>
             <BasicCard/>
-            <ContainedButtons/>
+            <br/>
             <PremiumCard/>
-            <ContainedButtons/>
+            <br/>
         </Container>
     </React.Fragment>
   );
