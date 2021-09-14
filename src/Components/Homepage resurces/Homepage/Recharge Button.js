@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-export default function DisableElevation() {
+export default function Recharge() {
   return (
     <Button variant="contained" color="primary" disableElevation>
       Recharge

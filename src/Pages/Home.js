@@ -32,6 +32,7 @@ export default function Home() {
             <AirtelThanks/>
             <br/>
             <ButtonLink/>
+            <br/>
         </Container>
     </React.Fragment>
   );

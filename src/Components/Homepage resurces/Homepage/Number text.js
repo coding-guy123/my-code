@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import Recharge from './Recharge Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +29,7 @@ export default function FormPropsTextFields() {
           variant="outlined"
         />
       </div>
+      <Recharge/>
     </form>
   );
 }
