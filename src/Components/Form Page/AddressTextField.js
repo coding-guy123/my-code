@@ -29,14 +29,14 @@ export default function AddressTextFields() {
           required
           id="outlined-required"
           label="House/Flat Number"
-          defaultValue="Enter Your Address"
+          defaultValue="Enter Your Flat Number"
           variant="outlined"
         />
         <TextField
           required
           id="outlined-required"
           label="Pin Code"
-          defaultValue="Enter Your Address"
+          defaultValue="Enter Your Pin"
           variant="outlined"
         />
       </div>

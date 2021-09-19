@@ -13,6 +13,10 @@ import PrivacyLink from './Components/Footer/PrivacyLink';
 import CookieLink from './Components/Footer/CookieLink';
 import DLTLink from './Components/Footer/DLTLink';
 import ContactLink from './Components/Footer/ContactLink';
+import FormBasic from './Pages/FormBasic';
+import FormPremium from './Pages/FormPremium';
+import HMenu from './Pages/Menu';
+
 
 function App() {
   return (
@@ -29,6 +33,9 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/compare'}  > <Compare/> </Route>
             <Route path={process.env.PUBLIC_URL + '/form'}  > <Form/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/formbasic'}  > <FormBasic/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/formpremium'}  > <FormPremium/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/menu'}  > <HMenu/> </Route>
             
           </Switch>
 

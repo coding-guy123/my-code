@@ -21,7 +21,7 @@ export default function FormPropsTextFields() {
       </div>
       <div>
           <br/>
-        Your Mobile Number
+         Mobile Number
         <TextField
           id="outlined-helperText"
           label="Enter Your Mobile Number"
@@ -29,7 +29,8 @@ export default function FormPropsTextFields() {
           variant="outlined"
         />
         <br/>
-         Your Full Name
+          Full Name
+          <br/>
         <TextField
           required
           id="outlined-required"
@@ -38,7 +39,8 @@ export default function FormPropsTextFields() {
           variant="outlined"
         />
         <br/>
-         Your Email ID
+          Email ID
+          <br/>
         <TextField
           required
           id="outlined-required"

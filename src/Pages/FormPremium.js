@@ -5,7 +5,7 @@ import OutlinedCard from '../Components/Form Page/PersonalDetails';
 import AddressCard from '../Components/Form Page/AddressCard';
 import ConfirmButtons from '../Components/Form Page/ConfirmButton';
 
-export default function Form() {
+export default function FormPremium() {
   return (
     <React.Fragment>
       <Container fixed>

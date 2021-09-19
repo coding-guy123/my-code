@@ -35,7 +35,6 @@ export default function Home() {
             <br/>
             <MoneyWallet/>
             <br/>
-            Entertainment
             <SingleLineImageList/>
             <br/>
             <AirtelThanks/>
