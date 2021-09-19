@@ -9,11 +9,19 @@ import FormPropsTextFields from '../Components/Homepage resurces/Homepage/Number
 import ButtonLink from '../Components/Homepage resurces/Homepage/Backtotop';
 import FullWidthTabs from '../Components/Homepage resurces/Homepage/Tabs';
 import MoneyWallet from '../Components/Homepage resurces/Homepage/MoneyWallet';
+import DisableElevation from '../Components/Homepage resurces/Homepage/Back';
+import SwipeableTextMobileStepperButton from '../Components/Homepage resurces/Homepage/CardCarousle';
+import Starting from './../Assets/Starting.png';
+import SingleLineImageList from '../Components/MovieImgList';
+
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container Fixed>
+            <br/>
+            <img src={Starting} />
+            <br/>
             <br/>
             <FullWidthTabs/>
             <br/>
@@ -27,11 +35,14 @@ export default function Home() {
             <br/>
             <MoneyWallet/>
             <br/>
-            <SwipeableTextMobileStepper/>
+            Entertainment
+            <SingleLineImageList/>
             <br/>
             <AirtelThanks/>
             <br/>
-            <ButtonLink/>
+            <DisableElevation/>
+            <br/>
+            <br/>
             <br/>
         </Container>
     </React.Fragment>

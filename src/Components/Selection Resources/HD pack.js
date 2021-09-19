@@ -5,8 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import ContainedButtons from './ContainedButtons';
 import HDStepper from './HDstepper';
+import ContainedButtons from './ContainedButtons';
 
 const useStyles = makeStyles({
   root: {
@@ -25,26 +25,26 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function OutlinedCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Get 10% off
+          Buy HD Xstream Now
         </Typography>
         <Typography variant="h5" component="h2">
           ₹1500
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          HD-High Definition Pack
+          HD High Definition Pack
         </Typography>
         <Typography variant="body2" component="p">
-          103 Channel Pack
-          <HDStepper/>
+          103 Channel pack
           <br />
+          <HDStepper/>
         </Typography>
       </CardContent>
       <CardActions>
