@@ -30,12 +30,19 @@ function App() {
           <Switch>
             <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/selection'} > <Selection/> </Route>
+            {/* Selection Page */}
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
+            {/* For HomePage do my-code/home */}
             <Route path={process.env.PUBLIC_URL + '/compare'}  > <Compare/> </Route>
+            {/* Comparison Page */}
             <Route path={process.env.PUBLIC_URL + '/form'}  > <Form/> </Route>
+            {/* HDPack Form */}
             <Route path={process.env.PUBLIC_URL + '/formbasic'}  > <FormBasic/> </Route>
+            {/* Basic Form */}
             <Route path={process.env.PUBLIC_URL + '/formpremium'}  > <FormPremium/> </Route>
+            {/* Basic Plan Form */}
             <Route path={process.env.PUBLIC_URL + '/menu'}  > <HMenu/> </Route>
+            {/* Hamburger Menu */}
             
           </Switch>
 
