@@ -13,6 +13,13 @@ import DisableElevation from '../Components/Homepage resurces/Homepage/Back';
 import SwipeableTextMobileStepperButton from '../Components/Homepage resurces/Homepage/CardCarousle';
 import Starting from './../Assets/Starting.png';
 import SingleLineImageList from '../Components/MovieImgList';
+import PrivacyLink from '../Components/Footer/PrivacyLink';
+import CookieLink from '../Components/Footer/CookieLink';
+import DLTLink from '../Components/Footer/DLTLink';
+import ContactLink from '../Components/Footer/ContactLink';
+import ImportantLink from '../Components/Footer/FooterLinks';
+import Facebook from '../Components/Footer/Icon';
+import TextButtons from '../Components/Homepage resurces/Homepage/Back';
 
 
 export default function Home() {
@@ -39,17 +46,28 @@ export default function Home() {
             <br/>
             <AirtelThanks/>
             <br/>
-            <DisableElevation/>
+            <TextButtons/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <footer>
+        <br/>
+        <Facebook/>
+        <br/>
+        <br/>
+        <ImportantLink/>
+        <br/>
+        <PrivacyLink/>
+        <br/>
+        <CookieLink/>
+        <br/>
+        <DLTLink/>
+        <br/>
+        <ContactLink/>
+        <br/>
+        <br/>
+        Copy Right Information
+        <br/>
+        <br/>
+      </footer>
         </Container>
     </React.Fragment>
   );

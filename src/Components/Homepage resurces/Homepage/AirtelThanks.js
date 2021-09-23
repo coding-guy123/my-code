@@ -5,6 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import GooglePlay from './GooglePlay';
+import Appstore from './Appstore';
 
 const useStyles = makeStyles({
   root: {
@@ -41,6 +43,11 @@ export default function AirtelThanks() {
         </Typography>
         <Typography variant="body2" component="p">
           Download Airtel Apps
+          <br/>
+          <GooglePlay/>
+          <br/>
+          <br/>
+          <Appstore/>
           <br />
         </Typography>
       </CardContent>

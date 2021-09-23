@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import {Link, Router} from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,9 +17,12 @@ export default function TextButtons() {
 
   return (
     <div className={classes.root}>
+      
+      <Link to={process.env.PUBLIC_URL + '/home'}>
       <Button href="#text-buttons" color="primary">
         Back To Top
       </Button>
+      </Link>
     </div>
   );
 }

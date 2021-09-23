@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ContainedButtons from './ContainedButtons';
 import PremiumStepper from './XPremiumStepper';
+import BuyPremium from './BuyPremium';
 
 const useStyles = makeStyles({
   root: {
@@ -48,7 +49,7 @@ export default function OutlinedCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <ContainedButtons/>
+        <BuyPremium/>
       </CardActions>
     </Card>
   );

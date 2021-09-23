@@ -3,9 +3,9 @@ import Button from '@material-ui/core/Button';
 import {Link, Router} from "react-router-dom";
 
 
-export default function BuyIt() {
+export default function BuyNowBasic() {
   return (
-    <Link to={process.env.PUBLIC_URL + '/form'}>
+    <Link to={process.env.PUBLIC_URL + '/formBasic'}>
     <Button variant="contained" color="primary" disableElevation>
       Buy Now
     </Button>

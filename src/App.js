@@ -46,23 +46,23 @@ function App() {
             
           </Switch>
 
-      <footer className="App-footer">
-        <br/>
-        <ButtonLink/>
-        <br/>
-        <PrivacyLink/>
-        <br/>
-        <CookieLink/>
-        <br/>
-        <DLTLink/>
-        <br/>
-        <ContactLink/>
-        <br/>
-        <br/>
-        Copy Right Information
+      {/* <footer className="App-footer"> */}
+        {/* <br/> */}
+        {/* <ButtonLink/> */}
+        {/* <br/> */}
+        {/* <PrivacyLink/> */}
+        {/* <br/> */}
+        {/* <CookieLink/> */}
+        {/* <br/> */}
+        {/* <DLTLink/> */}
+        {/* <br/> */}
+        {/* <ContactLink/> */}
         <br/>
         <br/>
-      </footer>
+        {/* Copy Right Information */}
+        <br/>
+        <br/>
+      {/* </footer> */}
     </div>
   );
   }

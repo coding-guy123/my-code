@@ -6,6 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SwipeableTextMobileStepperPlan from './Stepper';
+import LinkButton from './SelectLink';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +30,8 @@ export default function SimpleAccordion() {
           id="panel1a-header"
         >
           <Typography className={classes.heading}>Plan Summary</Typography>
+          <br/>
+          <LinkButton/>
         </AccordionSummary>
         <AccordionDetails>
           <SwipeableTextMobileStepperPlan/>

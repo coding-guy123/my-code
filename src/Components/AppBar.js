@@ -12,6 +12,7 @@ import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import SwipeableTemporaryDrawer from './Homepage resurces/Homepage/Drawer';
+import MenuDrawer from './H Menu/LeftDrawer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,9 +54,10 @@ export default function MenuAppBar() {
       </FormGroup>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          <MenuDrawer/>
+          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> */}
+            {/* <MenuIcon /> */}
+          {/* </IconButton> */}
           <Typography variant="h6" className={classes.title}>
             Airtel
           </Typography>

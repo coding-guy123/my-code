@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from '@material-ui/core/Link';
 
-export default function ButtonLink() {
+export default function ImportantLink() {
   return (
     <Link
       component="button"

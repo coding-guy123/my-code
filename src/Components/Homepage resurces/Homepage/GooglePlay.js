@@ -1,17 +1,10 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import {Link, Router} from "react-router-dom";
 
-
-export default function BuyIt() {
+export default function GooglePlay() {
   return (
-    <Link to={process.env.PUBLIC_URL + '/form'}>
     <Button variant="contained" color="primary" disableElevation>
-      Buy Now
+      Google Play
     </Button>
-    </Link>
   );
-
-
-
 }

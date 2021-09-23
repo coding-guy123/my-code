@@ -8,6 +8,8 @@ import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
 import ContainedButtons from '../Homepage resurces/Homepage/ViewContainedButtons';
 import BuyIt from './Buy NowButtons';
+import BuyNowBasic from './BuyNowBasic';
+import BuyNowPremium from './BuyNowPremium';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -99,10 +101,10 @@ export default function SpacingGrid() {
           <BuyIt/>
       </Grid>
       <Grid item xs={4}>
-          <BuyIt/>
+          <BuyNowBasic/>
       </Grid>
       <Grid item xs={4}>
-          <BuyIt/>
+          <BuyNowPremium/>
       </Grid>
     </Grid>
   );
