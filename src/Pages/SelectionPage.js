@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import OutlinedCard from '../Components/Selection Resources/SimpleCard';
-import ContainedButtons from '../Components/Selection Resources/ContainedButtons';
-import ImgMediaCard from '../Components/Selection Resources/HD pack';
-import BasicCard from '../Components/Selection Resources/XstremeBasic';
-import PremiumCard from '../Components/Selection Resources/XstremePremium';
+import OutlinedCard from '../Components/SelectionResources/SimpleCard';
+import ContainedButtons from '../Components/SelectionResources/ContainedButtons';
+import ImgMediaCard from '../Components/SelectionResources/HD pack';
+import BasicCard from '../Components/SelectionResources/XstremeBasic';
+import PremiumCard from '../Components/SelectionResources/XstremePremium';
 ;
 
 export default function Selection() {

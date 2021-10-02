@@ -6,10 +6,18 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
-import ContainedButtons from '../Homepage resurces/Homepage/ViewContainedButtons';
+import ContainedButtons from '../Homepageresurces/Homepage/ViewContainedButtons';
 import BuyIt from './Buy NowButtons';
 import BuyNowBasic from './BuyNowBasic';
 import BuyNowPremium from './BuyNowPremium';
+import img1 from '../../Assets/PremiumQual.png'
+import img2 from '../../Assets/Record and Play.png'
+import img3 from '../../Assets/DigitalSound.png'
+import img4 from '../../Assets/550 Tv channels.png'
+import img5 from '../../Assets/Android.png'
+import img6 from '../../Assets/Chrome.png'
+import img7 from '../../Assets/Playstore.png'
+import img8 from '../../Assets/Prime.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,40 +61,40 @@ export default function SpacingGrid() {
           ₹3298
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img1} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img5} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img5} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img2} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img4} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img4} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img3} /> 
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img6} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img6} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img4} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img7} />
       </Grid>
       <Grid item xs={4}>
-          Img
+      <img src={img8} />
       </Grid>
       <Grid item xs={4}>
           103 Channel Pack

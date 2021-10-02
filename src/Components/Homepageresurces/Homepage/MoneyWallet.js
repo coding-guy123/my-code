@@ -11,14 +11,14 @@ import ContainedButtons from './ViewContainedButtons';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '100%',
   },
   media: {
-    height: 140,
+    height: '100%',
   },
 });
 
-export default function MediaCard() {
+export default function MoneyWallet() {
   const classes = useStyles();
 
   return (
@@ -30,12 +30,11 @@ export default function MediaCard() {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <ContainedButtons/>
           <Typography gutterBottom variant="h5" component="h2">
-            Airtel Postpaid
+           Open Airtel Money Wallet
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-             Airtel Postpaid Plan Starting at ₹499
+             Get up to ₹40 Cashback
           </Typography>
         </CardContent>
       </CardActionArea>

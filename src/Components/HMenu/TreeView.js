@@ -4,6 +4,7 @@ import TreeView from '@material-ui/lab/TreeView';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import TreeItem from '@material-ui/lab/TreeItem';
+import {Link, Router} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -32,25 +33,29 @@ export default function MultiSelectTreeView() {
         <TreeItem nodeId="3" label="Buy New DTH Connection" />
         <TreeItem nodeId="4" label="View Plans" />
         <TreeItem nodeId="5" label="Upgrade Box" />
-        <TreeItem nodeId="6" label="Xstream" />
+        <TreeItem nodeId="6"/>
+        <Link to={process.env.PUBLIC_URL + '/selection'}>
+        Xstream
+
+        </Link>
 
       </TreeItem>
-      <TreeItem nodeId="2" label="Postpaid">
+      <TreeItem nodeId="7" label="Postpaid">
           </TreeItem>
 
-          <TreeItem nodeId="3" label="Broadband">
+          <TreeItem nodeId="8" label="Broadband">
           </TreeItem>
 
-          <TreeItem nodeId="4" label="Bank">
+          <TreeItem nodeId="9" label="Bank">
           </TreeItem>
 
-          <TreeItem nodeId="5" label="Help">
+          <TreeItem nodeId="10" label="Help">
           </TreeItem>
 
-          <TreeItem nodeId="6" label="Xstream">
+          <TreeItem nodeId="11" label="Xstream">
           </TreeItem>
 
-          <TreeItem nodeId="7" label="Sign In">
+          <TreeItem nodeId="12" label="Sign In">
           </TreeItem>
     </TreeView>
   );

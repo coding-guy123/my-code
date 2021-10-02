@@ -11,8 +11,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import SwipeableTemporaryDrawer from './Homepage resurces/Homepage/Drawer';
-import MenuDrawer from './H Menu/LeftDrawer';
+import SwipeableTemporaryDrawer from './Homepageresurces/Homepage/Drawer';
+import MenuDrawer from './HMenu/LeftDrawer';
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -6,10 +6,16 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 //import itemData from './itemData';
-import image from '../Assets/Loki.png'
-import image2 from '../Assets/Rangbaaz.png'
-import image3 from '../Assets/Movie3.png'
-import image4 from '../Assets/Bajirao.png'
+import image from '../../Assets/Loki.png'
+import image2 from '../../Assets/Rangbaaz.png'
+import image3 from '../../Assets/Movie3.png'
+import image4 from '../../Assets/Bajirao.png'
+import LokiCard from './ClickableCard1';
+import RangbaazCard from './ClickableCard2';
+import StoriesCard from './ClickableCard3';
+import BajiraoCard from './ClickableCard4';
+import HerapheriCard from './ClickableCard5';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,11 +24,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
+    height: 500
   },
   imageList: {
     flexWrap: 'nowrap',
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
+    height: 500
   },
   title: {
     color: theme.palette.primary.light,
@@ -31,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
   },
+  ImageListItem: {
+    height: '100%' 
+  }
 }));
 
 
@@ -73,25 +84,51 @@ export default function SingleLineImageList() {
 
   return (
     <div className={classes.root}>
-      <ImageList className={classes.imageList} cols={2.5}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img src={item.img} alt={item.title} />
-            <ImageListItemBar
-              title={item.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
-            />
-          </ImageListItem>
-        ))}
-        {itemData2.map((item) => (
+      <ImageList className={classes.imageList} cols={1.75}>
+      <ImageListItem>
+       <LokiCard/>
+      </ImageListItem>
+
+      <ImageListItem>
+       <RangbaazCard/>
+      </ImageListItem>
+
+      <ImageListItem>
+       <StoriesCard/>
+      </ImageListItem>
+
+      <ImageListItem>
+       <BajiraoCard/>
+      </ImageListItem>
+
+      <ImageListItem>
+       <HerapheriCard/>
+      </ImageListItem>
+
+           {/* <ImageListItem key={item.img}>
+              <img src={item.img} alt={item.title} />
+             <ImageListItemBar 
+            title={item.title}
+             classes={{
+             root: classes.titleBar,
+                 title: classes.title,
+               }}
+               actionIcon={
+                 <IconButton aria-label={`star ${item.title}`}>
+                   <StarBorderIcon className={classes.title} />
+                 </IconButton>
+               }
+             />
+            </ImageListItem>
+         ))} 
+
+         <LokiCard/>
+         <RangbaazCard/>
+         <StoriesCard/>
+         <BajiraoCard/>
+         <HerapheriCard/> */}
+
+        {/* {itemData2.map((item) => (
           <ImageListItem key={item.img2}>
             <img src={item.img2} alt={item.title} />
             <ImageListItemBar
@@ -107,6 +144,7 @@ export default function SingleLineImageList() {
               }
             />
           </ImageListItem>
+          <LokiCard/>
         ))}
         {itemData3.map((item) => (
           <ImageListItem key={item.img3}>
@@ -141,7 +179,7 @@ export default function SingleLineImageList() {
               }
             />
           </ImageListItem>
-        ))}
+        ))} */}
       </ImageList>
     </div>
   );

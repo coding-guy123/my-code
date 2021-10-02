@@ -7,7 +7,7 @@ import Selection from './Pages/SelectionPage';
 import Compare from './Pages/ComparePage';
 import Form from './Pages/FormPage';
 import MenuAppBar from './Components/AppBar';
-import SimpleCard from './Components/Selection Resources/HD pack';
+import SimpleCard from './Components/SelectionResources/HD pack';
 import ButtonLink from './Components/Footer/FooterLinks';
 import PrivacyLink from './Components/Footer/PrivacyLink';
 import CookieLink from './Components/Footer/CookieLink';

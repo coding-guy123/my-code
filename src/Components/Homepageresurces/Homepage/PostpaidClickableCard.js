@@ -11,31 +11,31 @@ import ContainedButtons from './ViewContainedButtons';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '100%',
+  },
+  media: {
+    height: 140,
   },
 });
 
-export default function ImgMediaCard() {
+export default function MediaCard() {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
-          component="img"
-          alt="Airtel"
-          height="140"
+          className={classes.media}
           image="/static/images/cards/contemplative-reptile.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
           <ContainedButtons/>
           <Typography gutterBottom variant="h5" component="h2">
-            Airtel Prepaid Services
+            Airtel Postpaid
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            With Airtel Unlimited Prepaid Plan
-                   Talk Unlimited!!  
+             Airtel Postpaid Plan Starting at ₹499
           </Typography>
         </CardContent>
       </CardActionArea>

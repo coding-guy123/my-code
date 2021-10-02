@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      color: '#fafafa;'
     },
   },
 }));
@@ -22,19 +23,20 @@ export default function Facebook() {
 
   return (
     <div className={classes.root}>
-      <IconButton aria-label="Facebook">
+      
+      <IconButton aria-label="Facebook" href="https://www.facebook.com/pg/AirtelIndia/community/">
         <FacebookIcon/>
       </IconButton>
 
-      <IconButton aria-label="LinkedIn">
+      <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/company/airtel/?originalSubdomain=in">
         <LinkedInIcon />
       </IconButton>
 
-      <IconButton aria-label="Twitter">
+      <IconButton aria-label="Twitter" href="https://mobile.twitter.com/airtelindia">
         <TwitterIcon />
       </IconButton>
 
-      <IconButton aria-label="Youtube">
+      <IconButton aria-label="Youtube" href="https://youtube.com/c/airtel">
         <YouTubeIcon/>
       </IconButton>
     </div>
