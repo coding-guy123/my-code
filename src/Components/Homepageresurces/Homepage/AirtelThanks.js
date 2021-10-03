@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import GooglePlay from './GooglePlay';
 import Appstore from './Appstore';
+import Thanks from'../../../Assets/Thanks.png'
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -23,6 +25,13 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  img: {
+    height: '100%',
+    display: 'block',
+    maxWidth: 1000,
+    overflow: 'hidden',
+    width: '100%',
+  },
 });
 
 export default function AirtelThanks() {
@@ -32,24 +41,17 @@ export default function AirtelThanks() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Explore all new airtel thanks app
-        </Typography>
-        <Typography variant="h5" component="h2">
-          Airtel Thanks
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          Get exclusive offers and account information at one place
-        </Typography>
-        <Typography variant="body2" component="p">
-          Download Airtel Apps
-          <br/>
+      <Grid container spacing={3}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <img src={Thanks} />
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <GooglePlay/>
-          <br/>
-          <br/>
+          </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Appstore/>
-          <br />
-        </Typography>
+          </Grid>
+          </Grid>
       </CardContent>
       <CardActions>
       </CardActions>

@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import HDStepper from './HDstepper';
 import ContainedButtons from './ContainedButtons';
+import HdSwipeableTextMobileStepper from './HDstepper';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -32,23 +34,35 @@ export default function OutlinedCard() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Buy HD Xstream Now
         </Typography>
-        <Typography variant="h5" component="h2">
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
+        <Typography variant="h4" component="h2">
           ₹1500
         </Typography>
+        </Grid>
+        <Grid container spacing={3}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography className={classes.pos} color="textSecondary">
           HD High Definition Pack
         </Typography>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography variant="body2" component="p">
-          103 Channel pack
-          <br />
-          <HDStepper/>
-        </Typography>
+          103 Channel Pack
+          </Typography>
+          </Grid>
+          </Grid>
+          <HdSwipeableTextMobileStepper/>
+        
       </CardContent>
       <CardActions>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <ContainedButtons/>
+        </Grid>
       </CardActions>
     </Card>
   );

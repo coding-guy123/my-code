@@ -5,9 +5,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import MultilineTextFields from './ChooseCity';
-import AddressTextFields from './AddressTextField';
-import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -26,25 +23,30 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AddressCard() {
+export default function ICard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card className={classes.root}>
       <CardContent>
-      <Grid container spacing={3} justifyContent="center">
-        City
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-        <MultilineTextFields/>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-        <AddressTextFields/>
-        </Grid>
-        </Grid>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+          be{bull}nev{bull}o{bull}lent
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
       </CardContent>
       <CardActions>
-        
+        <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
   );

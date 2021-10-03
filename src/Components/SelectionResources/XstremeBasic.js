@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import ContainedButtons from './ContainedButtons';
 import BasicStepper from './XBasicStepper';
 import BuyBasic from './BuyBasic';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -33,23 +34,34 @@ export default function OutlinedCard() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Get 10% off
         </Typography>
-        <Typography variant="h5" component="h2">
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
+        <Typography variant="h4" component="h2">
           ₹2489
         </Typography>
+        </Grid>
+        <Grid container spacing={3}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography className={classes.pos} color="textSecondary">
           Xstreme Basic
         </Typography>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
         <Typography variant="body2" component="p">
           132 Channel Pack
-          <br />
           <BasicStepper/>
         </Typography>
+        </Grid>
+        </Grid>
       </CardContent>
       <CardActions>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
        <BuyBasic/>
+       </Grid>
       </CardActions>
     </Card>
   );

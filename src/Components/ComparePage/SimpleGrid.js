@@ -42,76 +42,76 @@ export default function SpacingGrid() {
 
   return (
     <Grid container className={classes.root} spacing={2}>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           HD High definition Pack
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           Xstream Basic
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           Xstream premium
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           ₹1500
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           ₹2498
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           ₹3298
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img1} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img5} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img5} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img2} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img4} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img4} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img3} /> 
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img6} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img6} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img4} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img7} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
       <img src={img8} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           103 Channel Pack
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           132 Channel Pack
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           132 Channel Pack
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           <BuyIt/>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           <BuyNowBasic/>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} md={4} lg={4} xl={4}>
           <BuyNowPremium/>
       </Grid>
     </Grid>

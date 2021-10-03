@@ -30,60 +30,63 @@ export default function Home() {
     <React.Fragment>
         <Container Fixed>
         <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <img src={Starting} />
             </Grid>
-            </Grid>
-            <br/>
-            <br/> 
-            <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12}>
+             
+            
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <FullWidthTabs/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={3}>
-        <Grid item xs={20} sm={12} md={12}>
+            
+            
+           
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <SwipeableTextMobileStepper/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={3}>
-        <Grid item xs={12} sm={6} md={6}>
+            
+
+            
+        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <ImgMediaCard/>
-            <br/>
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <MediaCard/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12}>
+            
+            
+            
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <OutlinedCard/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12}>
+            
+            
+            
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
             <MoneyWallet/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={0.5}>
-        <Grid item xs={12} sm={15} md={18}>
+           
+            
+           
+        <Grid item xs={12} sm={15} md={12} lg={12} xl={12}>
             <SingleLineImageList/>
             </Grid>
-            </Grid>
-            <br/>
-            <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12}>
+          
+            
+           
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
             <AirtelThanks/>
             </Grid>
-            </Grid>
-            <br/>
+            
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <TextButtons/>
-            <br/>
+            </Grid>
+            </Grid>  
         </Container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <FooterCard/>
+        </Grid>
     </React.Fragment>
   );
 }

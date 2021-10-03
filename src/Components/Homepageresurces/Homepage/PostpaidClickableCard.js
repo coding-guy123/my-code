@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ContainedButtons from './ViewContainedButtons';
+import Postpaid from'../../../Assets/PostpaidC.png'
 
 const useStyles = makeStyles({
   root: {
@@ -24,23 +25,13 @@ export default function MediaCard() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
         <CardContent>
+        <img src={Postpaid} />
           <ContainedButtons/>
-          <Typography gutterBottom variant="h5" component="h2">
-            Airtel Postpaid
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-             Airtel Postpaid Plan Starting at ₹499
-          </Typography>
+          
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
+  
     </Card>
   );
 }

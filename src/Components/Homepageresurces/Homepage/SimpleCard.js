@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AirtelBlack from './AirtelBlack';
+import Black from'../../../Assets/Black.png'
 
 const useStyles = makeStyles({
   root: {
@@ -31,20 +32,8 @@ export default function OutlinedCard() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Explore these new services
+      <img src={Black} />
           <AirtelBlack/>
-        </Typography>
-        <Typography variant="h5" component="h2">
-          Airtel Black
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          Enjoy 30 days free of a new service with Airtel Black
-        </Typography>
-        <Typography variant="body2" component="p">
-          Airtel Black services
-          <br />
-        </Typography>
       </CardContent>
       <CardActions>
       </CardActions>

@@ -9,6 +9,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      height:'100%',
+      width:'100%'
     },
   },
 }));

@@ -12,6 +12,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MultiSelectTreeView from './TreeView';
 import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 const useStyles = makeStyles({
@@ -54,9 +55,9 @@ export default function MenuDrawer() {
 
   return (
     <div>
-      {['left'].map((anchor) => (
+      {[''].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)}>{anchor} <MenuIcon/></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

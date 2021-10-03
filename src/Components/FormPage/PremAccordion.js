@@ -8,8 +8,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SwipeableTextMobileStepperPlan from './Stepper';
 import LinkButton from './SelectLink';
 import HdSwipeableTextMobileStepper from '../SelectionResources/HDstepper';
-import { Divider, Grid } from '@material-ui/core';
-
+import PremSwipeableTextMobileStepper from '../SelectionResources/XPremiumStepper';
+import { Grid } from '@material-ui/core';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleAccordion() {
+export default function PremSimpleAccordion() {
   const classes = useStyles();
 
   return (
@@ -39,18 +40,23 @@ export default function SimpleAccordion() {
           </Grid>
           </Grid>
         </AccordionSummary>
-        <Divider/>
+       
+         <Divider/>
         <AccordionDetails>
-          <HdSwipeableTextMobileStepper/>
+          <Grid container spacing={0} align="center">
+                    <Grid item xs={12} sm={12} md={12} xl={12}>
+          <PremSwipeableTextMobileStepper/>
+          </Grid>
+          </Grid>
         </AccordionDetails>
-        <Grid container spacing={0} align="left">
-                    <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h10"> Total(Excl GST)  </Typography> 
+        <Grid container spacing={-2} align="left">
+                    <Grid item xs={6} sm={6} md={6} xl={6}>
+                <Typography variant="h10"> Total (Excl GST)  </Typography> 
                 </Grid>
 
               
-                    <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h5" color="textSecondary" align="right">₹1500</Typography>
+                    <Grid item xs={6} sm={6} md={6} xl={6}>
+                <Typography variant="h5" color="textSecondary" align="right">₹3298</Typography>
                 </Grid>
                 </Grid>
       </Accordion>

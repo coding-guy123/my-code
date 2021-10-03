@@ -4,31 +4,40 @@ import SimpleAccordion from '../Components/FormPage/Accordion';
 import OutlinedCard from '../Components/FormPage/PersonalDetails';
 import AddressCard from '../Components/FormPage/AddressCard';
 import ConfirmButtons from '../Components/FormPage/ConfirmButton';
+import BasicSimpleAccordion from '../Components/FormPage/BasicAccordion';
+import { Grid } from '@material-ui/core';
 
 export default function FormBasic() {
   return (
     <React.Fragment>
       <Container fixed>
-        <br/>
-       <SimpleAccordion/>
-       <br/>
+      <Grid container spacing={5}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+       <BasicSimpleAccordion/>
+       </Grid>
+
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
        Personal Details
+       </Grid>
+
+       
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
        <OutlinedCard/>
-       <br/>
+       </Grid>
+
+       
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
        Address
+       </Grid>
+
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
        <AddressCard/>
-       <br/>
+       </Grid>
+       
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} alignItems="center">
        <ConfirmButtons/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
+       </Grid>
+      </Grid>
       </Container>
     </React.Fragment>
   );

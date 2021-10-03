@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ContainedButtons from './ViewContainedButtons';
+import Prepaid from'../../../Assets/PrepaidC.png'
 
 const useStyles = makeStyles({
   root: {
@@ -21,26 +22,19 @@ export default function ImgMediaCard() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Airtel"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
+        
         <CardContent>
+        <img src={Prepaid} />
           <ContainedButtons/>
-          <Typography gutterBottom variant="h5" component="h2">
+          {/* <Typography gutterBottom variant="h5" component="h2">
             Airtel Prepaid Services
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             With Airtel Unlimited Prepaid Plan
                    Talk Unlimited!!  
-          </Typography>
+          </Typography> */}
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
     </Card>
   );
 }

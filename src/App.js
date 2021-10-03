@@ -16,6 +16,7 @@ import ContactLink from './Components/Footer/ContactLink';
 import FormBasic from './Pages/FormBasic';
 import FormPremium from './Pages/FormPremium';
 import HMenu from './Pages/Menu';
+import { Grid } from '@material-ui/core';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
+      <Grid container spacing={3}>
       <MenuAppBar/>
+      </Grid>
       </header>
       
       {/* Router - Pages */}

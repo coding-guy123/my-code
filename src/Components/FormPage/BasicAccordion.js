@@ -8,7 +8,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SwipeableTextMobileStepperPlan from './Stepper';
 import LinkButton from './SelectLink';
 import HdSwipeableTextMobileStepper from '../SelectionResources/HDstepper';
-import { Divider, Grid } from '@material-ui/core';
+import BasicSwipeableTextMobileStepper from '../SelectionResources/XBasicStepper';
+import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleAccordion() {
+export default function BasicSimpleAccordion() {
   const classes = useStyles();
 
   return (
@@ -39,20 +41,25 @@ export default function SimpleAccordion() {
           </Grid>
           </Grid>
         </AccordionSummary>
-        <Divider/>
+        <Divider />
         <AccordionDetails>
-          <HdSwipeableTextMobileStepper/>
+        <Grid container spacing={0} align="center">
+                    <Grid item xs={12} sm={12} md={12} xl={12}>
+          <BasicSwipeableTextMobileStepper/>
+          </Grid>
+          </Grid>
         </AccordionDetails>
         <Grid container spacing={0} align="left">
                     <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h10"> Total(Excl GST)  </Typography> 
+                <Typography variant="h10"> Total (Excl GST)  </Typography> 
                 </Grid>
 
               
                     <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h5" color="textSecondary" align="right">₹1500</Typography>
+                <Typography variant="h5" color="textSecondary" align="right">₹2498</Typography>
                 </Grid>
                 </Grid>
+
       </Accordion>
     </div>
   );

@@ -13,9 +13,12 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import SwipeableTemporaryDrawer from './Homepageresurces/Homepage/Drawer';
 import MenuDrawer from './HMenu/LeftDrawer';
+import Logo from '../Assets/Logo.png'
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    backgroundcolor: '#f7f6f6',
     flexGrow: 1,
   },
   menuButton: {
@@ -23,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: '#d23535',
+    
   },
 }));
 
@@ -46,24 +51,23 @@ export default function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-      <FormGroup>
-        <FormControlLabel
-          control={<Switch checked={auth} onChange={handleChange} aria-label="login switch" />}
-          label={auth ? 'Logout' : 'Login'}
-        />
-      </FormGroup>
+      
       <AppBar position="static">
         <Toolbar>
           <MenuDrawer/>
           {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> */}
             {/* <MenuIcon /> */}
           {/* </IconButton> */}
-          <Typography variant="h6" className={classes.title}>
-            Airtel
+          <Grid container spacing={-8}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Typography variant="h10" className={classes.title}>
+          <img src={Logo} />
           </Typography>
+          </Grid>
+          </Grid>
           {auth && (
             <div>
-              <IconButton
+              <IconButton 
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
