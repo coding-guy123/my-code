@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from '@material-ui/core/Link';
+import { Typography } from '@material-ui/core';
 
 export default function ImportantLink() {
   return (
@@ -11,7 +12,7 @@ export default function ImportantLink() {
         console.info("I'm a button.");
       }}
     >
-      Important Alerts
+      <Typography > Important Alerts </Typography>
     </Link>
     
   );

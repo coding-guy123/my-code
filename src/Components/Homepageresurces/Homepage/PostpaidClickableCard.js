@@ -9,13 +9,20 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ContainedButtons from './ViewContainedButtons';
 import Postpaid from'../../../Assets/PostpaidC.png'
+import { Grid } from '@material-ui/core';
+
+
 
 const useStyles = makeStyles({
   root: {
     maxWidth: '100%',
+    backgroundcolor: '#720001',
+    height:'100%',
+    width:'100%'
   },
   media: {
-    height: 140,
+    height:'100%',
+    width:'100%'
   },
 });
 
@@ -24,9 +31,13 @@ export default function MediaCard() {
 
   return (
     <Card className={classes.root}>
+     
       <CardActionArea>
-        <CardContent>
-        <img src={Postpaid} />
+        <CardContent style={{ backgroundColor: '#720001' }}>
+        <CardMedia>
+          
+        <img src={Postpaid} width= "100%" height= "100%"/>
+        </CardMedia>
           <ContainedButtons/>
           
         </CardContent>

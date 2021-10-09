@@ -31,7 +31,7 @@ export default function RangbaazCard() {
           
         />
         <CardContent>
-          <img src={image2} />
+          <img src={image2} width= "100%" height= "100%" />
         </CardContent>
       </CardActionArea>
     </Card>

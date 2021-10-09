@@ -9,6 +9,7 @@ export default function ContactLink() {
       variant="body2"
       onClick={() => {
         console.info("I'm a button.");
+        
       }}
     >
       Contact Us

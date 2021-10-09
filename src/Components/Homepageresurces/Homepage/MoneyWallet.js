@@ -25,8 +25,8 @@ export default function MoneyWallet() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardContent>
-        <img src={Money} />
+        <CardContent style={{ backgroundColor: '#720001' }}>
+        <img src={Money} width= "100%" height= "100%"/>
         </CardContent>
       </CardActionArea>
     </Card>

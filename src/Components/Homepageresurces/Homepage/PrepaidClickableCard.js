@@ -13,6 +13,12 @@ import Prepaid from'../../../Assets/PrepaidC.png'
 const useStyles = makeStyles({
   root: {
     maxWidth: '100%',
+    width: "100%", 
+    height: "100%"
+  },
+  media: {
+    height:'100%',
+    width:'100%'
   },
 });
 
@@ -23,9 +29,11 @@ export default function ImgMediaCard() {
     <Card className={classes.root}>
       <CardActionArea>
         
-        <CardContent>
-        <img src={Prepaid} />
+        <CardContent style={{ backgroundColor: '#720001' }}>
+        <CardMedia>
+        <img src={Prepaid} width= "100%" height= "100%" />
           <ContainedButtons/>
+          </CardMedia>
           {/* <Typography gutterBottom variant="h5" component="h2">
             Airtel Prepaid Services
           </Typography>

@@ -37,7 +37,7 @@ export default function HerapheriCard() {
           
         />
         <CardContent>
-          <img src={image5} />
+          <img src={image5} width= "100%" height= "100%" />
         </CardContent>
       </CardActionArea>
     </Card>

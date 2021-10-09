@@ -6,7 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AirtelBlack from './AirtelBlack';
-import Black from'../../../Assets/Black.png'
+import Outlinedimg from'../../../Assets/Outlinedimg.svg'
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -31,8 +32,11 @@ export default function OutlinedCard() {
 
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-      <img src={Black} />
+     
+      <CardContent style={{ backgroundColor: '#000000' }}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <img src={Outlinedimg} width= "100%" height= "100%"/>
+      </Grid>
           <AirtelBlack/>
       </CardContent>
       <CardActions>

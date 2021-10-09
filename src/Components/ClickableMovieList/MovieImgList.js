@@ -17,6 +17,8 @@ import BajiraoCard from './ClickableCard4';
 import HerapheriCard from './ClickableCard5';
 
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -24,13 +26,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
-    height: 500
+    height: '100%',
   },
+
   imageList: {
     flexWrap: 'nowrap',
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
-    height: 500
+    height: '100%',
   },
   title: {
     color: theme.palette.primary.light,
@@ -40,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
   },
   ImageListItem: {
-    height: '100%' 
+    height: '100%', 
   }
 }));
 
@@ -85,7 +88,7 @@ export default function SingleLineImageList() {
   return (
     <div className={classes.root}>
       <ImageList className={classes.imageList} cols={1.75}>
-      <ImageListItem>
+      <ImageListItem className={classes.ImageListItem}>
        <LokiCard/>
       </ImageListItem>
 

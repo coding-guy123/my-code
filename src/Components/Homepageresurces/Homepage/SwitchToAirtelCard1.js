@@ -30,7 +30,7 @@ export default function SwitchCard1() {
           title="Contemplative Reptile"
         />
         <CardContent>
-        <img src={img9} />
+        <img src={img9} width= "100%" height= "100%" />
           <Typography gutterBottom variant="h5" component="h2">
             Airtel Prepaid Services
           </Typography>

@@ -18,15 +18,28 @@ import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundcolor: '#f7f6f6',
+    backgroundcolor: '#ffffff',
     flexGrow: 1,
   },
+  AppBar: {
+    padding: '3%',
+    background: '#ffffff',
+  
+
+  },
+  IconButton: {
+    background: '#f90202' ,
+  },
+
+
   menuButton: {
     marginRight: theme.spacing(2),
+    color:'#ffffff'
   },
   title: {
     flexGrow: 1,
-    color: '#d23535',
+    padding : '2%'
+    
     
   },
 }));
@@ -52,7 +65,9 @@ export default function MenuAppBar() {
   return (
     <div className={classes.root}>
       
-      <AppBar position="static">
+      <AppBar position="static" className={classes.AppBar}
+>
+
         <Toolbar>
           <MenuDrawer/>
           {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> */}
@@ -73,7 +88,8 @@ export default function MenuAppBar() {
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
-              >
+                className={classes.IconButton}
+                >
                 <AccountCircle />
               </IconButton>
               <Menu

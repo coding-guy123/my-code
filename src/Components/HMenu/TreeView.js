@@ -5,12 +5,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import TreeItem from '@material-ui/lab/TreeItem';
 import {Link, Router} from "react-router-dom";
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    height: 216,
+    height: 850,
     flexGrow: 1,
     maxWidth: 400,
+    backgroundColor: "#b40606",
+    color:"#ffffffde"
   },
 });
 
@@ -34,10 +37,12 @@ export default function MultiSelectTreeView() {
         <TreeItem nodeId="4" label="View Plans" />
         <TreeItem nodeId="5" label="Upgrade Box" />
         <TreeItem nodeId="6"/>
-        <Link to={process.env.PUBLIC_URL + '/selection'}>
-        Xstream
-
-        </Link>
+        
+        <Button color="#ffffffde" >
+        <Link to={process.env.PUBLIC_URL + '/selection'} >
+         Xstream
+         </Link>
+        </Button>
 
       </TreeItem>
       <TreeItem nodeId="7" label="Postpaid">

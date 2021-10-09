@@ -31,7 +31,7 @@ export default function LokiCard() {
           
         />
         <CardContent>
-          <img src={image} />
+          <img src={image} width= "100%" height= "100%" />
         </CardContent>
       </CardActionArea>
     </Card>

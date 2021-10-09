@@ -31,7 +31,7 @@ export default function StoriesCard() {
           
         />
         <CardContent>
-          <img src={image3} />
+          <img src={image3} width= "100%" height= "100%"/>
         </CardContent>
       </CardActionArea>
     </Card>

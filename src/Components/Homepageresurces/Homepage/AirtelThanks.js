@@ -13,6 +13,7 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    background: 'linear-gradient(to bottom, #d2001a, #8f0000 ,#000000,#000000)',
   },
   bullet: {
     display: 'inline-block',
@@ -30,7 +31,7 @@ const useStyles = makeStyles({
     display: 'block',
     maxWidth: 1000,
     overflow: 'hidden',
-    width: '100%',
+    width: '50%',
   },
 });
 
@@ -40,10 +41,10 @@ export default function AirtelThanks() {
 
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
+      <CardContent >
       <Grid container spacing={3}>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-        <img src={Thanks} />
+        <img src={Thanks} width= "100%" height= "100%" />
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <GooglePlay/>

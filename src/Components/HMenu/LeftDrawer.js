@@ -16,11 +16,15 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 const useStyles = makeStyles({
+ 
   list: {
     width: 250,
+  
   },
   fullList: {
     width: 'auto',
+    backgroundColor: "#b40606"
+    
   },
 });
 
@@ -57,7 +61,7 @@ export default function MenuDrawer() {
     <div>
       {[''].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor} <MenuIcon/></Button>
+          <Button onClick={toggleDrawer(anchor, true)}>{anchor} <MenuIcon /></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

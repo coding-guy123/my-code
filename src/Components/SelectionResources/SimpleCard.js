@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    background: 'linear-gradient(to right bottom, #181d2b,#222c43, #4a5b83 )',
   },
   bullet: {
     display: 'inline-block',
@@ -17,9 +18,11 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    color:'#fff8c5'
   },
   pos: {
     marginBottom: 12,
+    color:'#fff8c5'
   },
 });
 
@@ -31,22 +34,18 @@ export default function OutlinedCard() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          New Airtel DTH Box
         </Typography>
-        <Typography variant="h5" component="h2">
-          DTH box
+        <Typography className={classes.pos} variant="h5" component="h2">
+        Flat 10% off on DTH Box and Pack
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          Flat 10% off
+        Use code ADTV10 AND SAVE MORE TODAY!
         </Typography>
-        <Typography variant="body2" component="p">
+        <Typography className={classes.pos} variant="body2" component="p">
           Get exclusive and new orders
-          <br />
-          {'"a benevolent smile"'}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
   );

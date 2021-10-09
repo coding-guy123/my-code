@@ -39,27 +39,29 @@ export default function FooterCard() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
       <Grid container spacing={3}>
-<Grid item xs={12} sm={12} md={12}>
-<Facebook/>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
+<Facebook />
 </Grid>
 </Grid>
-<br/>
-<br/>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 <ImportantLink/>
-<br/>
+</Grid>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 <PrivacyLink/>
-<br/>
+</Grid>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 <CookieLink/>
-<br/>
+</Grid>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 <DLTLink/>
-<br/>
+</Grid>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 <ContactLink/>
-<br/>
-<br/>
+</Grid>
+<Grid item xs={12} sm={12} md={12} lg={12} xl={12}justifyContent="center">
 Copy Right Information
-<br/>
-<br/>
-      </CardContent>
+</Grid>
+    </CardContent>
     </Card>
   );
 }
