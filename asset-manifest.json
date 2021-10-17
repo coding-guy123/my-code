@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/my-code/static/css/main.db49897d.chunk.css",
-    "main.js": "/my-code/static/js/main.7705d4fb.chunk.js",
-    "main.js.map": "/my-code/static/js/main.7705d4fb.chunk.js.map",
+    "main.js": "/my-code/static/js/main.c6df09e2.chunk.js",
+    "main.js.map": "/my-code/static/js/main.c6df09e2.chunk.js.map",
     "runtime-main.js": "/my-code/static/js/runtime-main.ab1540a9.js",
     "runtime-main.js.map": "/my-code/static/js/runtime-main.ab1540a9.js.map",
-    "static/js/2.418aafe5.chunk.js": "/my-code/static/js/2.418aafe5.chunk.js",
-    "static/js/2.418aafe5.chunk.js.map": "/my-code/static/js/2.418aafe5.chunk.js.map",
+    "static/js/2.3ba40a14.chunk.js": "/my-code/static/js/2.3ba40a14.chunk.js",
+    "static/js/2.3ba40a14.chunk.js.map": "/my-code/static/js/2.3ba40a14.chunk.js.map",
     "index.html": "/my-code/index.html",
     "static/css/main.db49897d.chunk.css.map": "/my-code/static/css/main.db49897d.chunk.css.map",
-    "static/js/2.418aafe5.chunk.js.LICENSE.txt": "/my-code/static/js/2.418aafe5.chunk.js.LICENSE.txt",
+    "static/js/2.3ba40a14.chunk.js.LICENSE.txt": "/my-code/static/js/2.3ba40a14.chunk.js.LICENSE.txt",
+    "static/media/ABlackimg.8954e799.png": "/my-code/static/media/ABlackimg.8954e799.png",
     "static/media/AndroTv.790b24f7.png": "/my-code/static/media/AndroTv.790b24f7.png",
     "static/media/Bajirao.90d685a5.png": "/my-code/static/media/Bajirao.90d685a5.png",
-    "static/media/Black.6c979bcc.png": "/my-code/static/media/Black.6c979bcc.png",
     "static/media/GChrome.d3e102e1.png": "/my-code/static/media/GChrome.d3e102e1.png",
     "static/media/GPlay.1aac163f.png": "/my-code/static/media/GPlay.1aac163f.png",
     "static/media/HDB.223da3b5.png": "/my-code/static/media/HDB.223da3b5.png",
@@ -22,22 +22,23 @@
     "static/media/Movie3.eaef88d4.png": "/my-code/static/media/Movie3.eaef88d4.png",
     "static/media/Movie5.657e38da.png": "/my-code/static/media/Movie5.657e38da.png",
     "static/media/Play.f77c9bbf.png": "/my-code/static/media/Play.f77c9bbf.png",
-    "static/media/PostpaidC.01555f22.png": "/my-code/static/media/PostpaidC.01555f22.png",
-    "static/media/PrepaidC.0ac9900c.png": "/my-code/static/media/PrepaidC.0ac9900c.png",
     "static/media/PrimeVid.14c29535.png": "/my-code/static/media/PrimeVid.14c29535.png",
     "static/media/Rangbaaz.961b5ac5.png": "/my-code/static/media/Rangbaaz.961b5ac5.png",
     "static/media/Sound.900ca546.png": "/my-code/static/media/Sound.900ca546.png",
     "static/media/Starting.2d063417.png": "/my-code/static/media/Starting.2d063417.png",
     "static/media/TVChannels.35719335.png": "/my-code/static/media/TVChannels.35719335.png",
-    "static/media/Thanks.e25da740.png": "/my-code/static/media/Thanks.e25da740.png",
+    "static/media/apple store.5e7d719a.jpg": "/my-code/static/media/apple store.5e7d719a.jpg",
+    "static/media/google play.0bedf62f.jpg": "/my-code/static/media/google play.0bedf62f.jpg",
+    "static/media/postpaid.6a865973.png": "/my-code/static/media/postpaid.6a865973.png",
+    "static/media/prepaid.a9b0624c.png": "/my-code/static/media/prepaid.a9b0624c.png",
     "static/media/purple.e561b582.png": "/my-code/static/media/purple.e561b582.png",
     "static/media/red.0d7a514e.png": "/my-code/static/media/red.0d7a514e.png",
     "static/media/yellow.d874f750.png": "/my-code/static/media/yellow.d874f750.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ab1540a9.js",
-    "static/js/2.418aafe5.chunk.js",
+    "static/js/2.3ba40a14.chunk.js",
     "static/css/main.db49897d.chunk.css",
-    "static/js/main.7705d4fb.chunk.js"
+    "static/js/main.c6df09e2.chunk.js"
   ]
 }
