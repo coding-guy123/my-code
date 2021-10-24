@@ -120,7 +120,7 @@ export default function Home() {
           
             
            
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <AirtelThanks/>
             </Grid>
             
