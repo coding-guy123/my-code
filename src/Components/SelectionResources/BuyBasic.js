@@ -21,7 +21,7 @@ export default function BuyBasic() {
     <div className={classes.root}>
         <Link to={process.env.PUBLIC_URL + '/compare'}>
 
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" style={{ backgroundColor: '#E40001' }}>
         Buy Now
       </Button>
        </Link>

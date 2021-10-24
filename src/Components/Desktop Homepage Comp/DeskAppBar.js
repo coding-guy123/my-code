@@ -11,41 +11,35 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import SwipeableTemporaryDrawer from './Homepageresurces/Homepage/Drawer';
-import MenuDrawer from './HMenu/LeftDrawer';
-import Logo from '../Assets/Logo.png'
+import DeskTabs from './Tabs';
 import { Grid } from '@material-ui/core';
-import Airlog from './Logo Button/Logo';
+import Airtel from '../../Assets/Logo.png'
+import { Container } from '@material-ui/core';
+import DeskNestedList from './Menu List';
+import DeskCenteredTabs from './Tabs';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import {Link, Router} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundcolor: '#ffffff',
     flexGrow: 1,
+    backgroundcolor: '#ffffff',
+    width: '100%',
   },
-  AppBar: {
-    padding: '3%',
-    background: '#ffffff',
-  
-
-  },
-  IconButton: {
-    background: '#ffffff' ,
-  },
-
-
   menuButton: {
     marginRight: theme.spacing(2),
-    color:'#ffffff'
   },
   title: {
     flexGrow: 1,
-    padding : '2%'
-    
-    
+   
+  },
+  Phone: {
+    padding: 11,
+   
   },
 }));
 
-export default function MenuAppBar() {
+export default function DeskMenuAppBar() {
   const classes = useStyles();
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -64,36 +58,43 @@ export default function MenuAppBar() {
   };
 
   return (
+   
     <div className={classes.root}>
-      
-      <AppBar position="static" className={classes.AppBar}
->
-
+      <AppBar position="static" color = '#ffffff'>
         <Toolbar>
-          <MenuDrawer/>
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> */}
-            {/* <MenuIcon /> */}
-          {/* </IconButton> */}
+        <Link to={process.env.PUBLIC_URL + '/home'}>
+        <img src={Airtel} />
+        </Link>
           <Grid container spacing={-8}>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <Typography variant="h10" className={classes.title}>
-          <Airlog/>
-          </Typography>
+          <Grid item md={12} lg={12} xl={12}>
           </Grid>
           </Grid>
           {auth && (
             <div>
-              <IconButton style={{color:'#CC011B'}}
-
+                <Grid container spacing={5}>
+                <Grid item md={2} lg={2} xl={2}>
+                 <PhoneAndroidIcon className={classes.Phone}
+                 style={{color:'#CC011B'}}
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
-                className={classes.IconButton}
-                >
+              >
+                <AccountCircle />
+              </PhoneAndroidIcon >
+              </Grid>
+              <Grid item md={2} lg={2} xl={2}>
+              <IconButton style={{color:'#CC011B'}}
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
                 <AccountCircle />
               </IconButton>
+              </Grid>
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}
@@ -112,10 +113,12 @@ export default function MenuAppBar() {
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
               </Menu>
+              </Grid>
             </div>
           )}
         </Toolbar>
       </AppBar>
     </div>
+    
   );
 }

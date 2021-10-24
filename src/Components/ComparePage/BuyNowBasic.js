@@ -6,7 +6,7 @@ import {Link, Router} from "react-router-dom";
 export default function BuyNowBasic() {
   return (
     <Link to={process.env.PUBLIC_URL + '/formBasic'}>
-    <Button variant="contained" color="primary" disableElevation>
+    <Button variant="contained" color="primary" style={{ backgroundColor: '#E40001' }} disableElevation>
       Buy Now
     </Button>
     </Link>

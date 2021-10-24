@@ -19,7 +19,7 @@ export default function TextButtons() {
     <div className={classes.root}>
       
       <Link to={process.env.PUBLIC_URL + '/home'}>
-      <Button href="#text-buttons" color="primary">
+      <Button href="#text-buttons" style={{color: '#720001' }}>
         Back To Top
       </Button>
       </Link>

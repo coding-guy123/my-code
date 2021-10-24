@@ -26,25 +26,29 @@ export default function Facebook() {
     <div className={classes.root}>
       <Grid container spacing={3}>
       <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-      <IconButton aria-label="Facebook"  href="https://www.facebook.com/pg/AirtelIndia/community/">
+      <IconButton aria-label="Facebook" style={{color:'#ffffff'}}
+ href="https://www.facebook.com/pg/AirtelIndia/community/">
         <FacebookIcon/>
       </IconButton>
       </Grid>
        
       <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-      <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/company/airtel/?originalSubdomain=in">
+      <IconButton aria-label="LinkedIn" style={{color:'#ffffff'}}
+ href="https://www.linkedin.com/company/airtel/?originalSubdomain=in">
         <LinkedInIcon />
       </IconButton>
       </Grid>
 
       <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-      <IconButton aria-label="Twitter" href="https://mobile.twitter.com/airtelindia">
+      <IconButton aria-label="Twitter" style={{color:'#ffffff'}}
+ href="https://mobile.twitter.com/airtelindia">
         <TwitterIcon />
       </IconButton>
       </Grid>
 
       <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-      <IconButton aria-label="Youtube" href="https://youtube.com/c/airtel">
+      <IconButton aria-label="Youtube" style={{color:'#ffffff'}}
+href="https://youtube.com/c/airtel">
         <YouTubeIcon/>
       </IconButton>
       </Grid>

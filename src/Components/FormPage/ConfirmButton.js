@@ -17,7 +17,7 @@ export default function ConfirmButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" style={{ backgroundColor: '#E40001' }}>
         Confirm
       </Button>
     </div>

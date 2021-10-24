@@ -23,19 +23,31 @@ import TextButtons from '../Components/Homepageresurces/Homepage/Back';
 import Grid from '@material-ui/core/Grid';
 import Paper from '../Components/Footer/Paper';
 import FooterCard from '../Components/Footer/Paper';
+import { Hidden } from '@material-ui/core';
+import DeskCenteredTabs from '../Components/Desktop Homepage Comp/Tabs';
+import DeskImgMediaCard from '../Components/Desktop Homepage Comp/DeskCards';
+import DeskImgMediaCard2 from '../Components/Desktop Homepage Comp/DeskCards2';
+import DeskImgMediaCard3 from '../Components/Desktop Homepage Comp/DeskCard3';
+import DeskImgMediaCard4 from '../Components/Desktop Homepage Comp/DeskCard4';
+import DeskImgMediaCard5 from '../Components/Desktop Homepage Comp/DeskCard5';
 
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container Fixed>
+
+        <Hidden only={['xs', 'sm']}>
+        <DeskCenteredTabs/>
+        </Hidden>
+
         <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
             <img src={Starting} width= "100%" height= "100%" />
             </Grid>
              
             
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
             <FullWidthTabs/>
             </Grid>
             
@@ -66,11 +78,44 @@ export default function Home() {
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
             <MoneyWallet/>
             </Grid>
+
+            <Grid container spacing={3} justifyContent ='center'>
+            <Hidden only={['xs', 'sm']}>
+            <Grid item  md={2} lg={2} xl={2}>
+        <DeskImgMediaCard/>
+        </Grid>
+        </Hidden> 
+
+        <Hidden only={['xs', 'sm']}>
+            <Grid item  md={2} lg={2} xl={2}>
+        <DeskImgMediaCard2/>
+        </Grid>
+        </Hidden> 
+
+        <Hidden only={['xs', 'sm']}>
+            <Grid item  md={2} lg={2} xl={2}>
+        <DeskImgMediaCard3/>
+        </Grid>
+        </Hidden> 
+
+        <Hidden only={['xs', 'sm']}>
+            <Grid item  md={2} lg={2} xl={2}>
+        <DeskImgMediaCard4/>
+        </Grid>
+        </Hidden> 
+
+        <Hidden only={['xs', 'sm']}>
+            <Grid item  md={2} lg={2} xl={2}>
+        <DeskImgMediaCard5/>
+        </Grid>
+        
+        </Hidden> 
+        </Grid>
            
-            
-           
-        <Grid item xs={12} sm={15} md={12} lg={12} xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Hidden only={['md', 'lg', 'xl']}>
             <SingleLineImageList/>
+            </Hidden>
             </Grid>
           
             

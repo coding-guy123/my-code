@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
+  text: {
+    width: '100%',
+    color: '#E40001'
+  },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
@@ -40,6 +44,7 @@ export default function SimpleAccordion() {
           </Grid>
         </AccordionSummary>
         <Divider/>
+        <Typography align ='left'>HD High Definition Box</Typography>
         <AccordionDetails>
           <HdSwipeableTextMobileStepper/>
         </AccordionDetails>
@@ -50,7 +55,7 @@ export default function SimpleAccordion() {
 
               
                     <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h5" color="textSecondary" align="right">₹1500</Typography>
+                <Typography variant="h5" color="textSecondary" className={classes.text} align="right">₹1500</Typography>
                 </Grid>
                 </Grid>
       </Accordion>

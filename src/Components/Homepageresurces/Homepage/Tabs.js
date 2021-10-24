@@ -50,6 +50,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     width: '100%', 
+    padding : '2%'
+    
   },
 }));
 
@@ -69,7 +71,7 @@ export default function FullWidthTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="ffffff">
-        <Tabs
+        <Tabs 
           value={value}
           onChange={handleChange}
           indicatorColor="primary" 
@@ -78,10 +80,10 @@ export default function FullWidthTabs() {
           aria-label="full width tabs example"
           color="ffffff"
         >
-          <Tab label="Prepaid" {...a11yProps(0)} />
-          <Tab label="Postpaid" {...a11yProps(1)} />
-          <Tab label="DTH" {...a11yProps(2)} />
-          <Tab label="Broadband" {...a11yProps(3)} />
+          <Tab  label="Prepaid" style={{ color: '#720001' }}{...a11yProps(0)} />
+          <Tab label="Postpaid" style={{ color: '#720001' }} {...a11yProps(1)} />
+          <Tab label="DTH"style={{ color: '#720001' }} {...a11yProps(2)} />
+          <Tab label="Broadband" style={{ color: '#720001' }} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

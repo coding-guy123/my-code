@@ -16,6 +16,11 @@ import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+    
+  },
+  text: {
+    width: '100%',
+    color: '#E40001'
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -28,6 +33,7 @@ export default function BasicSimpleAccordion() {
 
   return (
     <div className={classes.root}>
+      <Grid container spacing={3}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -42,6 +48,7 @@ export default function BasicSimpleAccordion() {
           </Grid>
         </AccordionSummary>
         <Divider />
+        <Typography align ='left'>Xstreme Basic</Typography>
         <AccordionDetails>
         <Grid container spacing={0} align="center">
                     <Grid item xs={12} sm={12} md={12} xl={12}>
@@ -56,11 +63,12 @@ export default function BasicSimpleAccordion() {
 
               
                     <Grid item xs={6} sm={12} md={12} xl={12}>
-                <Typography variant="h5" color="textSecondary" align="right">₹2498</Typography>
+                <Typography variant="h5" color="textSecondary" className={classes.text} align="right">₹2498</Typography>
                 </Grid>
                 </Grid>
 
       </Accordion>
+      </Grid>
     </div>
   );
 }

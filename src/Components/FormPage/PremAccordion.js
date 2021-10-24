@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
+  text: {
+    width: '100%',
+    color: '#E40001'
+  },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
@@ -42,6 +46,7 @@ export default function PremSimpleAccordion() {
         </AccordionSummary>
        
          <Divider/>
+         <Typography align ='left'><h8>Xstreme Premium</h8></Typography>
         <AccordionDetails>
           <Grid container spacing={0} align="center">
                     <Grid item xs={12} sm={12} md={12} xl={12}>
@@ -50,13 +55,14 @@ export default function PremSimpleAccordion() {
           </Grid>
         </AccordionDetails>
         <Grid container spacing={-2} align="left">
+          
                     <Grid item xs={6} sm={6} md={6} xl={6}>
                 <Typography variant="h10"> Total (Excl GST)  </Typography> 
                 </Grid>
 
               
                     <Grid item xs={6} sm={6} md={6} xl={6}>
-                <Typography variant="h5" color="textSecondary" align="right">₹3298</Typography>
+                <Typography variant="h5" color="textSecondary" className={classes.text} align="right">₹3298</Typography>
                 </Grid>
                 </Grid>
       </Accordion>

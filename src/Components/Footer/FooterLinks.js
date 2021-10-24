@@ -5,7 +5,8 @@ import { Typography } from '@material-ui/core';
 
 export default function ImportantLink() {
   return (
-    <Link
+    <Link style={{color:'#ffffff'}}
+
       component="button"
       variant="body2"
       onClick={() => {

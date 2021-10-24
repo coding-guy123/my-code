@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      color:"#3287EC"
     },
   },
 }));
@@ -20,7 +21,7 @@ export default function LinkButton() {
   return (
     <div className={classes.root}>
       
-      <Button href="#text-buttons" color="primary">
+      <Button href="#text-buttons" >
       <Link to={process.env.PUBLIC_URL + '/selection'}>
        <CachedIcon/>
        </Link>

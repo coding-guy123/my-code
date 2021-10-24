@@ -11,6 +11,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import yellow from '../../../Assets/yellow.png'
 import purple from '../../../Assets/purple.png'
 import red from '../../../Assets/red.png'
+import DotsMobileStepper from './stepper in carousle';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 1000,
     flexGrow: 1,
+    
   },
   header: {
     display: 'flex',
@@ -90,20 +92,22 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        variant="text"
-        activeStep={activeStep}
+      <MobileStepper 
+      style={{color: '#720001' }}
+      variant="dots"
+      steps={3}
+      position="static"
+      activeStep={activeStep}
+      className={classes.root}
         nextButton={
-          <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+          <Button style={{color: '#720001' }} size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
             
             {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+          <Button style={{color: '#720001' }} size="small" onClick={handleBack} disabled={activeStep === 0}>
+            {theme.direction === 'rtl' ? <KeyboardArrowRight  /> : <KeyboardArrowLeft />}
             
           </Button>
         }

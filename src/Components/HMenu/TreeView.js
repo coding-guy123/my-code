@@ -39,7 +39,8 @@ export default function MultiSelectTreeView() {
         <TreeItem nodeId="6"/>
         
         <Button color="#ffffffde" >
-        <Link to={process.env.PUBLIC_URL + '/selection'} >
+        <Link to={process.env.PUBLIC_URL + '/selection'} style={{color:'#ffffff'}}
+ >
          Xstream
          </Link>
         </Button>

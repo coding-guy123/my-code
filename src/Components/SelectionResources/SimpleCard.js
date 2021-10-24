@@ -5,6 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import LogoH from'../../Assets/logo half.png'
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -33,17 +35,26 @@ export default function OutlinedCard() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
+
+        <Grid item xs={8} sm={8} md={8} lg={8} xl={8} align='Left'>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
         </Typography>
-        <Typography className={classes.pos} variant="h5" component="h2">
+        </Grid>
+        <Grid item xs={8} sm={8} md={8} lg={8} xl={8} align='Left'>
+        <Typography className={classes.pos} variant="h7" component="h4" align='left'>
         Flat 10% off on DTH Box and Pack
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        </Grid>
+        <Grid item xs={8} sm={8} md={8} lg={8} xl={8} align='Left'>
+        <Typography className={classes.pos} color="textSecondary" align='left'>
         Use code ADTV10 AND SAVE MORE TODAY!
         </Typography>
-        <Typography className={classes.pos} variant="body2" component="p">
+        </Grid>
+        <Grid item xs={8} sm={8} md={8} lg={8} xl={8} align='Left'>
+        <Typography className={classes.pos} variant="body2" component="p" >
           Get exclusive and new orders
         </Typography>
+        </Grid>
       </CardContent>
       <CardActions>
       </CardActions>

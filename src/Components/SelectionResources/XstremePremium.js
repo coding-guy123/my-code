@@ -13,6 +13,7 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    color: '#ff0000de'
   },
   bullet: {
     display: 'inline-block',
@@ -21,9 +22,11 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    color:'#000000'
   },
   pos: {
     marginBottom: 12,
+    color:'#00a1ff'
   },
 });
 
@@ -35,7 +38,7 @@ export default function OutlinedCard() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.root} color="textSecondary" gutterBottom>
           Get 10% off
         </Typography>
         </Grid>
@@ -46,12 +49,12 @@ export default function OutlinedCard() {
         </Grid>
         <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography color="textSecondary">
           Xstreme Premium
         </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='Left'>
-        <Typography variant="body2" component="p">
+        <Typography className={classes.pos} color="textSecondary">
           132 Channel Pack
           <PremiumStepper/>
         </Typography>

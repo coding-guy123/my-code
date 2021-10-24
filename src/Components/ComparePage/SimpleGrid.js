@@ -18,10 +18,13 @@ import img5 from '../../Assets/Android.png'
 import img6 from '../../Assets/Chrome.png'
 import img7 from '../../Assets/Playstore.png'
 import img8 from '../../Assets/Prime.png'
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+   
+   
   },
   paper: {
     height: 140,
@@ -29,6 +32,13 @@ const useStyles = makeStyles((theme) => ({
   },
   control: {
     padding: theme.spacing(2),
+  },
+
+  text: {
+    color: '#ff0000de'
+  },
+  channel: {
+    color:'#00a1ff'
   },
 }));
 
@@ -51,68 +61,68 @@ export default function SpacingGrid() {
       <Grid item xs={4} md={4} lg={4} xl={4}>
           Xstream premium
       </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          ₹1500
+      <Grid item xs={4} md={4} lg={4} xl={4} className ={classes.text}>
+          <Typography><h2>₹1500</h2></Typography>
+      </Grid>
+      <Grid item xs={4} md={4} lg={4} xl={4} className ={classes.text}>
+      <Typography><h2>₹2498</h2></Typography>
+      </Grid>
+      <Grid item xs={4} md={4} lg={4} xl={4} className ={classes.text}>
+      <Typography><h2>₹3298</h2></Typography>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-          ₹2498
+      <img src={img1} width= "100%" height= "100%" />
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-          ₹3298
+      <img src={img5} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img1} />
+      <img src={img5} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img5} />
+      <img src={img2} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img5} />
+      <img src={img4} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img2} />
+      <img src={img4} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img4} />
+      <img src={img3} width= "100%" height= "100%"/> 
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img4} />
+      <img src={img6} width= "100%" height= "100%" />
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img3} /> 
+      <img src={img6} width= "100%" height= "100%" />
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img6} />
+      <img src={img4} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img6} />
+      <img src={img7} width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img4} />
+      <img src={img8} width= "100%" height= "100%"/>
+      </Grid>
+      <Grid item xs={4} md={4} lg={4} xl={4} className ={classes.channel}>
+      <Typography><h20> 103 Channel Pack</h20></Typography>
+      </Grid>
+      <Grid item xs={4} md={4} lg={4} xl={4}className ={classes.channel}>
+         <Typography><h20> 132 Channel Pack</h20></Typography>
+      </Grid>
+      <Grid item xs={4} md={4} lg={4} xl={4}className ={classes.channel}>
+        <Typography><h20> 132 Channel Pack</h20></Typography>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img7} />
+          <BuyIt width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-      <img src={img8} />
+          <BuyNowBasic width= "100%" height= "100%"/>
       </Grid>
       <Grid item xs={4} md={4} lg={4} xl={4}>
-          103 Channel Pack
-      </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          132 Channel Pack
-      </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          132 Channel Pack
-      </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          <BuyIt/>
-      </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          <BuyNowBasic/>
-      </Grid>
-      <Grid item xs={4} md={4} lg={4} xl={4}>
-          <BuyNowPremium/>
+          <BuyNowPremium width= "100%" height= "100%"/>
       </Grid>
     </Grid>
   );

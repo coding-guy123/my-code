@@ -17,6 +17,8 @@ import FormBasic from './Pages/FormBasic';
 import FormPremium from './Pages/FormPremium';
 import HMenu from './Pages/Menu';
 import { Grid } from '@material-ui/core';
+import Hidden from '@material-ui/core/Hidden';
+import DeskMenuAppBar from './Components/Desktop Homepage Comp/DeskAppBar';
 
 
 function App() {
@@ -25,7 +27,14 @@ function App() {
       {/* Header (Navigation Bar) */}
       <header className="App-header">
       <Grid container spacing={3}>
+      <Hidden only={['xs', 'sm']}>
+      <DeskMenuAppBar/>
+      </Hidden>
+      
+
+        <Hidden mdUp>
       <MenuAppBar/>
+      </Hidden>
       </Grid>
       </header>
       

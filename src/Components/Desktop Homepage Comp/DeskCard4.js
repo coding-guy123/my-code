@@ -7,42 +7,23 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import ContainedButtons from './ViewContainedButtons';
-import Postpaid from'../../../Assets/postpaid.png'
-import { Grid } from '@material-ui/core';
-
-
+import Bajirao from '../../Assets/Bajirao.png'
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '100%',
-    backgroundcolor: '#720001',
-    height:'100%',
-    width:'100%'
-  },
-  media: {
-    height:'100%',
-    width:'100%'
+    maxWidth: 345,
   },
 });
 
-export default function MediaCard() {
+export default function DeskImgMediaCard4() {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-     
       <CardActionArea>
-        <CardContent style={{ backgroundColor: '#720001' }}>
-        <CardMedia>
-          
-        <img src={Postpaid} width= "100%" height= "100%"/>
-        </CardMedia>
-          <ContainedButtons/>
-          
-        </CardContent>
+      <img src={Bajirao} width= "100%" height= "100%" />
+        
       </CardActionArea>
-  
     </Card>
   );
 }

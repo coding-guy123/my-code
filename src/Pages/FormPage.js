@@ -11,23 +11,21 @@ export default function Form() {
     <React.Fragment>
       <Container fixed>
       <Grid container spacing={3}>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+
+        <br/>
        <SimpleAccordion/>
        </Grid>
        
-       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-       Personal Details
-       </Grid>
 
-       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+       <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+       Personal Details
        <OutlinedCard/>
        </Grid>
        
-       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-       Address
-       </Grid>
 
-       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+       <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+       Address
        <AddressCard/>
        </Grid>
        

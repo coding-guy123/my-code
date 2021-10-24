@@ -4,7 +4,8 @@ import Link from '@material-ui/core/Link';
 
 export default function DLTLink() {
   return (
-    <Link
+    <Link style={{color:'#ffffff'}}
+
       component="button"
       variant="body2"
       onClick={() => {

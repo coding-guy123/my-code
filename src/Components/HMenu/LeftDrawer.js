@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
   fullList: {
     width: 'auto',
-    backgroundColor: "#b40606"
+    backgroundColor: "#CC011B"
     
   },
 });
@@ -61,7 +61,8 @@ export default function MenuDrawer() {
     <div>
       {[''].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor} <MenuIcon /></Button>
+          <Button onClick={toggleDrawer(anchor, true)}>{anchor} <MenuIcon style={{color:'#CC011B'}}
+ /></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

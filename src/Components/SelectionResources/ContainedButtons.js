@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       height:'100%',
-      width:'100%'
+      width:'100%',
     },
   },
 }));
@@ -23,7 +23,7 @@ export default function ContainedButtons() {
        
        <Link to={process.env.PUBLIC_URL + '/compare'}>
 
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" style={{ backgroundColor: '#E40001' }}>
         Buy Now
       </Button>
       </Link>
